@@ -1,6 +1,8 @@
 .DS_Store
 node_modules
 /dist
+kaikeba-code/
+/node_practice
 
 # local env files
 .env.local
