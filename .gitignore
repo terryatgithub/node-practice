@@ -2,7 +2,11 @@
 node_modules
 /dist
 kaikeba-code/
-/node_practice
+node_practice
+package-lock
+yarn-lock
+.env
+package-lock.json
 
 # local env files
 .env.local
