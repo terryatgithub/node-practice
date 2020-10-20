@@ -7,10 +7,11 @@ module.exports.createToken = token => {
 
     return {
         getExp: () => {
-            // ##BEGIN## 代码已加密
-JEHJEHJEHJEHJEHJEHJEHJEHJEHJEHJEHJEHOSJOEEOESOEIOEAJEHOEPOOIOPPOEJOEEOOIOSOJEHJXIJEHJASOJSJAIJAXJHOOEPOOIOEXOEIOSSJPPOESOSSOPSJEHJIEOPJOSEOSEOSSOEXJHOOSEOEXOEEOEOJPPOOIOEXOPPOOOJHPOOEJPAJEHJPEOOAOOIOEIOSSJXJJHIJPEJPHJPH
-JEHJEHJEHJEHJEHJEHJEHJEHJEHJEHJEHJEHOEXOSSOEAOPJOEXOESJEHOEPOOIOPPOEJOEEOOIOSOJHOOSSOPEOEP
-            // ##END##
+            //@暗号 贪心算法
+            const buf = Buffer.from(ary[1], 'base64')
+            let res = JSON.parse(buf.toString())
+            console.log(res);
+            return res.exp
         },
 
         verify: key => {
